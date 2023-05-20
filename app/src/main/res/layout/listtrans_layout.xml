@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لیست تراکنش ها"
+        android:textSize="30sp"/>
+
+    <Spinner
+        android:id="@+id/choose_acc_trans"
+        android:layout_below="@+id/materialTextView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/trans_show"
+        android:layout_below="@+id/choose_acc_trans"
+        android:layout_marginTop="15dp"
+        android:layout_width="180dp"
+        android:layout_height="61dp"
+        android:layout_centerHorizontal="true"
+        android:text="نمایش"
+        android:textStyle="bold"/>
+
+    <ListView
+        android:id="@+id/list_trans"
+        android:layout_below="@+id/trans_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"
+        android:divider="@color/white"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>
